@@ -11,11 +11,36 @@
   <link rel="stylesheet" href="leaflet/leaflet.css" />
 
 
-    <!-- Подключаем jquery -->
-    <script type="text/javascript" src="jquery.js"></script>
+  <!-- Подключаем jquery -->
+  <script type="text/javascript" src="jquery.js"></script>
 </head>
 
 <body>
+
+  <!-- Кнопки для теста -->
+
+  <div id="nav">
+    <div class="nav_div">
+      <label>Информация:</label><br>
+      <label for="Зум">Масштаб </label><label id="zoom" for="Зум">--</label><br>
+
+    </div>
+    <div class="nav_div">
+      <label>Слои</label><br>
+      <button>Добавить слой "Дороги"</button><br>
+      <button>Удалить слой "Дороги"</button><br>
+    </div>
+
+    <div class="nav_div">
+      <button>Добавить слой</button><br>
+      <button>Добавить маркер</button><br>
+      <button id="clear_gps_groop">Очистить карту</button><br>
+    </div>
+  </div>
+
+  <!-- Конец кнопок -->
+
+
   <div id="map" class="map" display="flex"></div>
 
   <!-- 1. Грузим векторные слои -->
@@ -26,11 +51,19 @@
   <!-- 2. Грузим скрипты -->
   <!-- Основные модули -->
   <script src="leaflet/leaflet.js"></script>
-  
+
 
   <!-- Главный скрипт -->
   <script src="index.js"></script>
-  
+
+  <!-- Слои (Layers) -->
+  <script src="Other Layers/GeoJSON.js"></script>
+
+  <!-- Элементы управления (Controls) -->
+  <script src="Controls/Layer_control.js"></script>
+
+
+
 </body>
 
 </html>

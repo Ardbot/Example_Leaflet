@@ -1,4 +1,4 @@
-
+// Управление слоями (Control.Layers). Document: https://leafletjs.com/reference.html#control-layers
 
 // Базовые слои (подложка)
 var baseLayers = {
@@ -13,4 +13,5 @@ var baseLayers = {
   
   // Выводим панель управления слоями на карту
   layer_control = L.control.layers(baseLayers, overlays).addTo(map)
+  
 
