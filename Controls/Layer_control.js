@@ -84,7 +84,7 @@ $("#remove_layer").on("click", function () {
 
 //////----------------Возвращает элемент на карту--------------------//////
 $("#add_layer").on("click", function () {
-  layer_control.addTo(map)
+  layer_control.addTo(map) // отрисовка элемента
 })
 
 
